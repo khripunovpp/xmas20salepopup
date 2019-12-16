@@ -1,0 +1,155 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  outline: none;
+}
+
+.xmas20sale {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: none;
+}
+
+.xmas20sale__wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+}
+
+.xmas20sale__popup {
+  background-color: #910b1f;
+  background-image: url(../img/xmas20popup-bg.jpg);
+  background-position: 100% 100%;
+  background-size: cover;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 20px rgba(145, 11, 31, 0.85);
+  box-shadow: 0 0 20px rgba(145, 11, 31, 0.85);
+  padding: 30px 20px;
+  border-radius: 10px;
+  position: relative;
+  max-width: 330px;
+}
+
+.xmas20sale__sign {
+  color: #fff;
+  display: block;
+  line-height: 1;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 3;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.xmas20sale__sign--1 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 55px;
+  font-weight: 900;
+}
+
+.xmas20sale__sign--2 {
+  font-family: "Rubik", sans-serif;
+  font-style: italic;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-top: 15px;
+}
+
+.xmas20sale__sign--3 {
+  font-family: "Playfair Display", serif;
+  font-size: 100px;
+  font-weight: 900;
+  font-size: 140px;
+  margin-top: -35px;
+  margin-left: -15px;
+  display: table;
+}
+
+.xmas20sale__sign--3 small {
+  font-weight: 400;
+  font-size: 60px;
+  position: absolute;
+  top: 30px;
+  left: 100%;
+}
+
+.xmas20sale__star {
+  position: absolute;
+  background-image: url(../img/xmas20popup-star.png);
+  background-size: cover;
+  z-index: 2;
+}
+
+.xmas20sale__star--1 {
+  width: 200px;
+  height: 207px;
+  top: 65px;
+  right: -65px;
+}
+
+.xmas20sale__star--2 {
+  width: 111px;
+  height: 116px;
+  top: -50px;
+  left: -30px;
+}
+
+.xmas20sale__close {
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/xmas20popup-close.png);
+  position: absolute;
+  top: -20px;
+  right: 3px;
+  opacity: .5;
+  cursor: pointer;
+}
+
+.xmas20sale__close:hover {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  .xmas20sale__popup {
+    max-width: 520px;
+    padding: 60px 40px;
+  }
+  .xmas20sale__sign--1 {
+    font-size: 100px;
+  }
+  .xmas20sale__sign--2 {
+    font-size: 70px;
+  }
+  .xmas20sale__sign--3 {
+    font-size: 180px;
+  }
+  .xmas20sale__sign--3 small {
+    font-size: 90px;
+    top: 20px;
+  }
+  .xmas20sale__star--1 {
+    width: 255px;
+    height: 264px;
+    top: 85px;
+  }
+  .xmas20sale__star--2 {
+    top: -20px;
+    left: -18px;
+  }
+}
